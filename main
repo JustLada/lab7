@@ -1,0 +1,10 @@
+import cv2
+path = 'C:\\Users\\C605\\Desktop\\map.jpeg'
+img = cv2.imread(path)
+
+blue, green, red = cv2.split(img)
+cv2.imshow('blue', blue)
+cv2.imshow('red', red)
+cv2.imshow('green', green)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
